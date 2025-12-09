@@ -622,10 +622,11 @@ $alimentos = obtenerProductos('alimentos');
             <a href="ticket.pdf" target="_blank">Ver Ticket en PDF</a>
         </div>
 
-        <a href="index1.html" class="back-button">Regresar</a>
+        <a href="index.html" class="back-button">Regresar</a>
     </div>
     <footer>
         <p>© 2025 Unidad de Informática BAR-BEER — Proyecto académico desarrollado bajo la visión del Lic. José Roberto Méndez.</p>
     </footer>
 </body>
 </html>
+

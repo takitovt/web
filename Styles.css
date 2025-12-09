@@ -1,0 +1,258 @@
+/* Scroll suave para toda la página */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Variable para la altura de la barra (se actualizará desde JS) */
+:root {
+    --nav-height: 90px; /* valor por defecto */
+}
+
+
+header{ background-image: url(ft/f_head1.JPG);
+    background-size: cover; 
+    background-position: center;
+    height: 100vh;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+}
+
+
+/* Estilos para la barra de navegación */
+.barrita {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    background-color: rgba(0, 0, 0, 0);
+    backdrop-filter: blur(0);
+    transition: all 0.3s ease;
+    width: 100%;
+}
+
+/* Clase que se añadirá con JavaScript cuando se haga scroll */
+.barrita.scrolled {
+    background-color: rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(10px);
+}
+.titulo{
+    text-align: center;
+    font-weight: bold;
+    margin-top: 400px;
+    color: #ffffff;
+    font-size: 80px;
+    font-family: "Pirata One", system-ui;
+    letter-spacing: 3px;
+
+}
+main{
+     margin-top: 200px;
+}
+#bbsitaua{
+    margin-right: 100px;
+    margin-left: 100px;
+    font-family: "Pirata One", system-ui;
+    font-size: 50px;
+}
+#bbsitabrr{
+    margin-top: 20px;  
+    margin-right: 100px;
+    margin-left: 100px;
+    margin-bottom: 200px;
+    font-family: "Unica One", sans-serif;
+    font-size: 30px;
+    text-align: justify;
+    
+}
+
+nav {
+    width: 100%;
+    padding: 8px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Estilos para los enlaces dentro del nav */
+.nav .nav-link{
+     display: block;
+    padding: 8px 18px;
+    color: white;
+    font-weight: 600;   
+    font-size: 40px;
+    font-family: "Unica One", sans-serif;
+    font-style: normal;
+    text-align: center;
+}
+
+.nav .nav-link:hover{
+    color: #20f532; /* color al pasar el ratón: dorado */
+    text-decoration: none;
+}
+
+.nav .nav-link.active{
+    color: #ff4501; /* color para el enlace activo */
+}
+
+.nav .nav-link.marca{
+    color: #ffffff; /* color por defecto: blanco */
+    font-weight: 600;   
+    font-size: 38px;
+    font-family: "Texturina", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+
+}
+
+
+/* Transición de color en los enlaces para que el cambio sea suave */
+.nav .nav-link{
+    transition: color 150ms ease;
+}
+.div.carouselcarousel-inner{
+height: 10px;
+
+}
+
+.carousel-item img{
+    height: 700px;
+    object-fit: contain;
+    width: 100%;
+}
+.carousel{
+    background-color: black;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.carousel-indicators button{
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: #ffeeee !important; /* Color naranja para los botones indicadores */
+    opacity: 0.5;
+}
+
+.carousel-indicators .active {
+    opacity: 1;
+}
+
+/* Estilo para las flechas del carrusel */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: #ff4501;
+    border-radius: 50%;
+    padding: 20px;
+}
+
+#NOSOTROS{
+    position: relative;
+    display: block;
+    unicode-bidi: isolate;
+
+}
+/* Offset para anclas con barra fija — usa la variable que actualiza JS */
+[id] {
+    scroll-margin-top: var(--nav-height);
+}
+.ñiñiñiñi{
+    display: flex;
+    text-align: center;
+    margin-bottom: 20px;
+background-color: black;
+justify-content: center;
+  gap: 30px;
+}
+
+.social-links{
+    display: flex; align-items: center;
+    justify-content: center;
+    width: 60px; height: 60px;
+    border-radius: 50%;
+    background: rgb(255, 255, 255, 0.1);
+    color: var(--text-dim); font-size: 1.5rem;
+    transition: var(--transition);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+.social-links:hover{
+    background: var(--neon-red);
+    color: #000; transform: translateY(-8px);
+    box-shadow: 0 10pv 25px rgb(255, 0, 60, 0.4);
+    border-color: var(--neon-red);
+}
+
+.nav-link-icon{
+    
+    margin: 0 15px;
+    margin: center;
+ margin-top: 10px;
+ margin: right 500px;
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+}
+/* Hacer que el cursor cambie a pointer al pasar sobre la imagen */
+.carousel-item a img {
+    cursor: pointer;
+}
+
+
+
+
+.footeer{
+    background-color: rgb(255, 255, 255);
+    height: 100px;
+    width: 100%;
+    text-align: center;
+}
+
+#lokita{
+    margin-top: 100px;
+    text-align: center;
+    color: black;
+    font-family: "Pirata One", system-ui;
+    font-size: 100px;
+    margin-bottom: 30px;
+}
+
+#pankakes{
+    font-weight: 600;   
+    font-size: 40px;
+    font-family: "Unica One", sans-serif;
+    font-style: normal;
+    text-align: center;
+}
+
+#taehyung{
+    width: 900px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+/* Contenedor que alinea la imagen del burrito y el texto en la misma línea */
+#rauw{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+#FURRYMI{
+    width: 400px;
+    height: auto;
+    display: block;
+    margin: 0;
+    margin-bottom:50px ;
+}
+
+#uwu{
+    margin: 0;
+    text-align: left;
+    color: black;
+    font-size: 20px;
+    font-family: "Unica One", sans-serif;
+    max-width: 600px;
+}
